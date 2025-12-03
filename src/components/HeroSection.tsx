@@ -43,7 +43,7 @@ const HeroSection = () => {
         
         {/* Título Principal */}
         <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 tracking-tight">
-          Olá, eu sou <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500">Roberto Mazor</span>
+          Olá, eu sou <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-teal-500">Roberto Mazor</span>
         </h1>
         
         {/* Sub-headline com Efeito de Digitação */}

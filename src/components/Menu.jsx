@@ -57,7 +57,7 @@ function Menu() {
      {/* Logo/Nome do Portfólio (INÍCIO) */}
      <div className="text-2xl font-extrabold tracking-wider">
       {/* CORREÇÃO: bg-linear-to-r não é uma classe Tailwind. Deve ser bg-gradient-to-r */}
-      <a href="#inicio" className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500">
+      <a href="#inicio" className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-teal-500">
        Roberto Mazor <span className="hidden sm:inline"> | Full-Stack</span>
       </a>
      </div>
