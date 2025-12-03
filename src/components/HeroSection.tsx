@@ -21,8 +21,6 @@ const HeroSection = () => {
 
     return () => clearInterval(timer);
   }, []);
-
-  // Removemos a constante 'animationStyles'
   
   // Array para renderizar as partículas (10 itens para o efeito)
   const particles = Array.from({ length: 10 }, (_, i) => <li key={i} />);

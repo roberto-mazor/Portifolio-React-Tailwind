@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Briefcase, Code, GraduationCap, Users } from 'lucide-react'; // Ícones do Lucide (ou use Heroicons, FontAwesome, etc.)
+import { Briefcase, Code, GraduationCap, Users } from 'lucide-react'; // Ícones do Lucide
 
-// Dados a serem exibidos (Você pode mover isso para um arquivo de configuração mais tarde)
+// Dados a serem exibidos (pode mover isso para um arquivo de configuração mais tarde)
 const aboutData = {
   headline: "Minha Jornada: Paixão por Código e Soluções",
   intro: "Olá! Sou Roberto Mazor. Minha trajetória na tecnologia é movida pela curiosidade e pelo desejo constante de criar soluções que façam a diferença. Como Desenvolvedor Full-Stack em formação, busco combinar a robustez do back-end com a usabilidade e beleza do front-end.",
