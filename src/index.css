@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Regra para Scroll Suave nas âncoras */
+html {
+  scroll-behavior: smooth;
+}
+
 /* src/index.css - Adicione no final do arquivo */
 
 /* ======================================= */
