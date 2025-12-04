@@ -1,12 +1,13 @@
+// src/pages/NotFound.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TriangleAlert } from 'lucide-react'; 
 
-// Remoção da prop { minimal } e da lógica condicional
 const NotFound = () => {
     return (
         <section 
             id="not-found" 
+            // min-h-screen garante que a seção ocupe toda a altura visível
             className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-8 pt-20"
         >
             <div className="text-center max-w-lg p-10 bg-gray-800 rounded-xl shadow-2xl border-t-4 border-red-500">
@@ -19,7 +20,6 @@ const NotFound = () => {
                 <h2 className="text-3xl font-bold text-gray-100 mb-4">Página Não Encontrada</h2>
                 <p className="text-gray-400 mb-6">
                     A URL que você tentou acessar não corresponde a nenhuma rota mapeada no seu portfólio.
-                    Isso geralmente acontece quando o endereço é digitado incorretamente.
                 </p>
 
                 {/* Botão para Voltar ao Início */}
@@ -34,8 +34,8 @@ const NotFound = () => {
 
             <div className="mt-8 text-sm text-gray-600 p-4 border-t border-gray-800">
                 <p>
-                    <span className="font-semibold text-gray-500">Explicação Técnica:</span> 
-                    No `App.jsx`, esta página é definida como a última `<Route path="*" />`, capturando todos os caminhos que falham nas rotas definidas.
+                    <span className="font-semibold text-gray-500">Informação:</span> 
+                    Este é o componente de rota catch-all.
                 </p>
             </div>
         </section>

@@ -25,7 +25,9 @@ const Projects = () => {
         // O ID é crucial para a navegação por âncora (#projetos)
         <section id="projetos" className="min-h-screen bg-gray-900 text-white pt-16 py-12 px-4 sm:px-8 lg:px-12">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-cyan-500">
+                <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4 
+               text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-cyan-500 
+               leading-normal">
                     Projetos Recentes
                 </h2>
                 <p className="text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto">
