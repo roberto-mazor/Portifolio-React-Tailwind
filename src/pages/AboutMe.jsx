@@ -38,7 +38,7 @@ const AboutMe = () => {
  };
  
 return (
- <section id="sobre-mim" className="min-h-screen bg-gray-900 text-white pt-16 py-12 px-4 sm:px-8 lg:px-12">
+<section id="sobre-mim" className="min-h-screen bg-gray-900 text-white pt-16 py-12 px-4 sm:px-8 lg:px-12">
 <div className="max-w-6xl mx-auto">
  
  {/* Título Principal */}
