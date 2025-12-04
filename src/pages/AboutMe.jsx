@@ -42,7 +42,7 @@ return (
 <div className="max-w-6xl mx-auto">
  
  {/* Título Principal */}
- <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500">
+ <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-teal-500">
  Sobre Mim
  </h2>
  
