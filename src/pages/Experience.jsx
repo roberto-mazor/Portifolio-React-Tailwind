@@ -4,25 +4,47 @@ import { Briefcase } from 'lucide-react';
 
 const experienceData = [
     {
-        title: "Nome do Cargo Atual/Recente",
-        company: "Nome da Empresa",
-        duration: "Jan 2024 – Presente",
+        title: " Analista COP Rede I",
+        company: "Claro S.A.",
+        duration: "Mar 2019 – Ago 2023",
         description: [
-            "Responsável pelo desenvolvimento e manutenção de componentes front-end usando React e Tailwind CSS.",
-            "Colaboração em equipes ágeis (Scrum) para entrega de novas funcionalidades.",
-            "Integração com APIs RESTful construídas em Node.js.",
+            "Monitoramento ativo da rede HFC em 26 cidades da região metropolitana de São Paulo.",
+            "Análise preventiva e corretiva de infraestrutura (Data Center, DHCP, DNS, tráfego).",
+            "Interpretação de gráficos Nagios para identificar falhas críticas",
+            "Garantia de indicadores de qualidade e cumprimento de SLAs.",
+            "Ferramentas: Nagios, Visum, Atlas, OptNet, AutoCAD, Qualinet, NetSms, New Monitor.",
+            "Acionamento logístico e gerenciamento de equipes externas para resolução rápida",
+            "Leitura e interpretação de projetos coaxiais (AutoCAD) para localização de falhas.",
+            "Interface com NOC Brasil, Data Center e COP para solução de eventos massivos.",
+            "Atualização de projetos em conjunto com equipe de projetos e gestores",
+            "Treinamento de novos colaboradores",
         ],
         type: "Profissional",
     },
     {
-        title: "Estágio/Projeto Pessoal de Impacto",
-        company: "Projeto X / Empresa Y",
-        duration: "Jun 2023 – Dez 2023",
+        title: "Estagiário de Suporte T.I.",
+        company: "SEDUC Americana - Secretaria da Educação",
+        duration: "Nov 2017 – Nov 2018",
         description: [
-            "Criação de um sistema de gestão de estoque do zero, utilizando Node.js, Express e PostgreSQL.",
-            "Otimização de consultas ao banco de dados, reduzindo o tempo de resposta em 30%.",
+            "Diagnóstico e resolução de problemas de software e hardware, fornecendo suporte a aplicativos.",
+            "Análise e desenvolvimento de sistemas, websites e testes/qualidade de software.",
+            "Análise de topologias de rede da instituição.",
         ],
         type: "Desenvolvimento",
+    },
+    {
+    "title": "Assistente Administrativo",
+    "company": "Auto Escola Cillos",
+    "duration": "Nov 2013 – Nov 2015",
+    "description": [
+        "Responsável por rotinas Fiscais e Financeiras, incluindo a emissão de Notas Fiscais de Serviço Eletrônica (NFSE) e fechamento financeiro mensal.",
+        "Contabilização de entradas de contratos e declaração de vendas.",
+        "Prospecção de clientes empresariais para serviços externos, realizando orçamentos, agendamentos e concretização de vendas.",
+        "Atendimento e suporte contínuo a clientes e professores.",
+        "Gerenciamento do controle de estoque de materiais, coordenação de processos de alunos e organização de arquivos.",
+        "Realização de cotações de serviços, materiais e pagamentos. (compras e contas)."
+    ],
+    "type": "Profissional"
     },
     // Adicione mais experiências aqui...
 ];
@@ -35,7 +57,7 @@ const Experience = () => {
             className="min-h-screen bg-gray-900 text-white pt-16 py-12 px-4 sm:px-8 lg:px-12"
         >
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-500">
+                <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-cyan-500">
                     💼 Experiência Profissional
                 </h2>
 
