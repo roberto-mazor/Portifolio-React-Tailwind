@@ -6,7 +6,7 @@ const projectList = [
         title: "Dashboard Financeiro Inteligente (Full-Stack)",
         image: "/public/previa_dashboard_financeiro.png", // Adicione suas imagens na pasta public
         description: "Gestão financeira completa com visualização de dados em tempo real e suporte a temas dinâmicos (Light/Dark). O projeto implementa uma arquitetura robusta com autenticação JWT e uma estratégia exclusiva de 'Wake-up Call' para otimizar o tempo de resposta do banco de dados PostgreSQL serverless.",
-        tags: ["React", "Node.js", "PostgreSQL(Neon)", "MUI X Charts", "Tailwind CSS"],
+        tags: ["React", "Node.js", "PostgreSQL Serverless (Neon)", "MUI X Charts", "Tailwind CSS"],
         githubLink: "https://github.com/roberto-mazor/dashboard-financeiro-projeto-pi",
         liveLink: "https://dashboard-financeiro-projeto-pi-web.vercel.app/",
     },
