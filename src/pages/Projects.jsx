@@ -3,13 +3,13 @@ import React from 'react';
 import { Github, ExternalLink } from 'lucide-react'; // Ícones para links externos/GitHub
 
 const projectList = [
-    {
-        title: "Nome do Projeto 1 (React/Tailwind)",
-        description: "Breve descrição do projeto. Foco na tecnologia Front-end utilizada e no desafio que ele resolveu. Este projeto demonstra proficiência em Hooks e componentes funcionais.",
-        tags: ["React", "Tailwind CSS", "Vite", "SPA"],
-        githubLink: "#", // Substitua pelo link real do GitHub
-        liveLink: "#",   // Substitua pelo link da demo
-    },
+{
+        title: "Dashboard Financeiro Inteligente (Full Stack)",
+        description: "Gestão financeira completa com visualização de dados em tempo real e suporte a temas dinâmicos (Light/Dark). O projeto implementa uma arquitetura robusta com autenticação JWT e uma estratégia exclusiva de 'Wake-up Call' para otimizar o tempo de resposta do banco de dados PostgreSQL serverless.",
+        tags: ["React", "Node.js", "PostgreSQL", "MUI X Charts", "Tailwind CSS"],
+        githubLink: "https://github.com/roberto-mazor/dashboard-financeiro-projeto-pi", 
+        liveLink: "https://dashboard-financeiro-projeto-pi-web.vercel.app/", 
+},
     {
         title: "Nome do Projeto 2 (Node/API)",
         description: "Projeto Back-end focado em API RESTful, utilizando Node.js e Express. Demonstra integração com banco de dados (ex: MongoDB ou PostgreSQL).",
