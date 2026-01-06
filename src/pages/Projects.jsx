@@ -5,7 +5,7 @@ const projectList = [
     {
         title: "Dashboard Financeiro Inteligente (Full-Stack)",
         image: "/previa_dashboard_financeiro.png", // Adicione suas imagens na pasta public
-        description: "Gestão financeira completa com visualização de dados em tempo real e suporte a temas dinâmicos (Light/Dark). O projeto implementa uma arquitetura robusta com autenticação JWT e uma estratégia 'Wake-up Call' para otimizar o tempo de resposta do banco de dados PostgreSQL serverless. OBS: Banco de dados pode levar 10 segundos para iniciar.",
+        description: "Gestão financeira completa com visualização de dados em tempo real e suporte a temas dinâmicos (Light/Dark). O projeto implementa uma arquitetura robusta com autenticação JWT e uma estratégia 'Wake-up Call' para otimizar o tempo de resposta do banco de dados PostgreSQL serverless. \n\nOBS: Banco de dados pode levar 10 segundos para iniciar.",
         tags: ["React", "Node.js", "PostgreSQL (Neon)", "Sequelize", "MUI X Charts", "Tailwind CSS"],
         githubLink: "https://github.com/roberto-mazor/dashboard-financeiro-projeto-pi",
         liveLink: "https://dashboard-financeiro-projeto-pi-web.vercel.app/",
@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
 
                 {/* 3. Descrição com Botão de Expansão */}
                 <div className="relative">
-                    <p className={`text-gray-300 text-sm leading-relaxed transition-all duration-300 ${isExpanded ? 'mb-4' : 'line-clamp-3 mb-2'}`}>
+                    <p className={`text-gray-300 text-sm leading-relaxed transition-all duration-300 whitespace-pre-line ${isExpanded ? 'mb-4' : 'line-clamp-3 mb-2'}`}>
                         {project.description}
                     </p>
                     <button 
