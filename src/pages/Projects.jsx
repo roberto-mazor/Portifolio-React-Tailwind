@@ -11,12 +11,12 @@ const projectList = [
         liveLink: "https://dashboard-financeiro-projeto-pi-web.vercel.app/",
     },
     {
-        title: "Nome do Projeto 2",
-        image: "/print-api.png",
-        description: "Projeto Back-end focado em API RESTful, utilizando Node.js e Express. Demonstra integração com banco de dados (ex: MongoDB ou PostgreSQL). Possui documentação completa das rotas e tratamento de erros centralizado.",
-        tags: ["Node.js", "Express", "MongoDB", "REST API"],
-        githubLink: "#",
-        liveLink: "#",
+        title: "Site Nutrição (Front-end)",
+        image: "/projeto_nutri.png",
+        description: "Site simples para treinar os fundamentos do Bootstrap",
+        tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+        githubLink: "https://github.com/roberto-mazor/nutri-projeto",
+        liveLink: "https://roberto-mazor.github.io/nutri-projeto/",
     },
 ];
 
