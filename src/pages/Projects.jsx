@@ -13,7 +13,7 @@ const projectList = [
     {
         title: "Site Nutrição (Front-end)",
         image: "/projeto_nutri.png",
-        description: "Site simples para treinar os fundamentos do Bootstrap",
+        description: "NutriVida: Landing Page para Nutrição Website institucional desenvolvido com foco em conversão e acessibilidade. Apresenta design responsivo, integração com VLibras para inclusão digital.",
         tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
         githubLink: "https://github.com/roberto-mazor/nutri-projeto",
         liveLink: "https://roberto-mazor.github.io/nutri-projeto/",
