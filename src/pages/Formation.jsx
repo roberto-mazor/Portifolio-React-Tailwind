@@ -2,6 +2,7 @@
 import React from 'react';
 import { BookOpen, Code, Layers, Award, CheckCircle2 } from 'lucide-react'; 
 
+// Dados do Curso e Módulos
 const formationData = {
     course: "Técnico em Programação Full Stack",
     institution: "Senac Americana",
@@ -10,6 +11,7 @@ const formationData = {
         {
             title: "Gestão e Planejamento",
             icon: BookOpen,
+            description: "Focado em processos de organização e pré-desenvolvimento.",
             details: [
                 "Gestão de projetos (Kanban, Mockups, Briefing)",
                 "Documentação (Diagrama de requisitos, Diagrama caso de uso)",
@@ -19,6 +21,7 @@ const formationData = {
             title: "Front-End Development",
             icon: Code,
             status: "Concluído",
+            description: "Criação de interfaces responsivas e dinâmicas.",
             details: [
                 "Web Base: HTML, CSS, JavaScript, Bootstrap",
                 "Ambiente: XAMPP, WordPress, Instalação Linux (VM), Servidor Apache",
@@ -28,11 +31,22 @@ const formationData = {
         {
             title: "Back-End e Bancos de Dados",
             icon: Layers,
+            status: "Desenvolvendo",
+            description: "Construção de APIs robustas e persistência de dados.",
             details: [
                 "Lógica de Programação (Portugol e JavaScript)",
                 "Bancos de Dados: SQL (mySQL), NoSQL (mongoDB, DBReaver)",
-                "Desenvolvimento Server-Side: Node.js, Express.js (APIs e Rotas)",
+                "Desenvolvimento Server-Side: Node.js, Express.js (API e rotas)",
                 "Ferramentas: Miro",
+            ]
+        },
+        {
+            title: "Desenvolvimento Mobile",
+            icon: Layers,
+            status: "Próximo",
+            description: "Desenvolver aplicativos Mobile responsivos e interativos.",
+            details: [
+                "React Native",
             ]
         }
     ],
@@ -52,31 +66,42 @@ const Formation = () => {
         <section id="formacao" className="bg-gray-800 text-white py-16 px-4 sm:px-8 lg:px-12">
             <div className="max-w-6xl mx-auto">
                 
+                {/* Título da Seção */}
                 <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4 text-teal-400">
                     Minha Formação
                 </h2>
                 
-                <div className="text-center mb-12 max-w-4xl mx-auto p-6 border border-gray-700 rounded-lg bg-gray-900/50">
-                    <p className="text-2xl font-semibold text-cyan-400">{formationData.course}</p>
+                {/* Informações do Curso Principal */}
+                <div className="text-center mb-10 max-w-4xl mx-auto p-4 border border-gray-700 rounded-lg bg-gray-900/50">
+                    <p className="text-xl font-semibold text-cyan-400">{formationData.course}</p>
                     <p className="text-lg text-gray-300">{formationData.institution}</p>
-                    <p className="text-sm italic text-gray-500 mt-2">{formationData.duration}</p>
+                    <p className="text-md italic text-gray-500">{formationData.duration}</p>
                 </div>
 
-                {/* Grade do Senac */}
-                <h3 className="text-2xl font-bold mb-8 flex items-center gap-2">
-                    <Code className="text-teal-400" /> Grade Curricular do Curso
+                {/* Grid de Módulos (Senac) */}
+                <h3 className="text-2xl font-bold text-center mb-8 text-gray-300">
+                    Grade Curricular
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                     {formationData.modules.map((module, index) => (
-                        <div key={index} className="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-teal-500 transition-colors shadow-lg">
-                            <h4 className="text-xl font-bold mb-4 text-cyan-400 flex items-center justify-between">
+                        <div key={index} className="bg-gray-900 p-6 rounded-xl shadow-lg transition duration-500 border border-teal-500 hover:border-cyan-500">
+                            <module.icon className="w-8 h-8 mb-4 text-teal-400" />
+                            <h4 className="text-lg font-semibold mb-2 text-cyan-400">
                                 {module.title}
-                                {module.status && <span className="text-[10px] bg-teal-600 px-2 py-1 rounded text-white uppercase tracking-wider">OK</span>}
+                                {module.status && (
+                                    <div className="mt-1">
+                                        <span className="text-[10px] font-bold px-2 py-0.5 bg-teal-600/50 rounded-full text-white uppercase tracking-wider">
+                                            {module.status}
+                                        </span>
+                                    </div>
+                                )}
                             </h4>
-                            <ul className="space-y-2 text-sm text-gray-400">
-                                {module.details.map((item, i) => (
-                                    <li key={i} className="flex items-start gap-2">
-                                        <span className="text-teal-500 mt-1">▹</span> {item}
+                            <p className="text-gray-400 mb-4 text-xs italic leading-tight">{module.description}</p>
+                            <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
+                                {module.details.map((detail, detailIndex) => (
+                                    <li key={detailIndex} className="hover:text-cyan-300 transition duration-200">
+                                        {detail}
                                     </li>
                                 ))}
                             </ul>
@@ -85,19 +110,19 @@ const Formation = () => {
                 </div>
 
                 {/* Seção de Cursos Complementares */}
-                <div className="bg-gray-900/80 p-8 rounded-2xl border border-gray-700 shadow-2xl">
-                    <h3 className="text-2xl font-bold mb-8 text-teal-400 flex items-center gap-2">
-                        <Award className="w-6 h-6" /> Cursos Complementares
+                <div className="mt-20 pt-12 border-t border-gray-700">
+                    <h3 className="text-2xl font-bold text-center mb-10 text-teal-400 flex items-center justify-center gap-3">
+                        <Award className="w-8 h-8" /> Cursos Complementares
                     </h3>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
                         {formationData.complementary.map((curso, index) => (
-                            <div key={index} className="flex items-center gap-4 p-4 rounded-lg bg-gray-800/50 border border-transparent hover:border-gray-600 transition-all group">
-                                <CheckCircle2 className="w-5 h-5 text-cyan-500 shrink-0 group-hover:scale-110 transition-transform" />
+                            <div key={index} className="flex items-start gap-4 p-4 rounded-lg bg-gray-900/40 border border-gray-700/50 hover:border-cyan-500/50 transition-all group">
+                                <CheckCircle2 className="w-5 h-5 text-cyan-500 shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                                 <div>
-                                    <p className="text-gray-200 font-medium leading-tight">{curso.title}</p>
+                                    <p className="text-gray-200 font-medium leading-snug">{curso.title}</p>
                                     <p className="text-xs text-gray-500 mt-1">
-                                        <span className="text-teal-600 font-bold">{curso.year}</span> — {curso.org}
+                                        <span className="text-teal-500 font-semibold">{curso.year}</span> — {curso.org}
                                     </p>
                                 </div>
                             </div>
